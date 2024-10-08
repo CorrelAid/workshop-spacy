@@ -1,0 +1,232 @@
+[
+    {
+        "label": "SPAM_KEYWORD",
+        "pattern": [
+            {
+                "TEXT": {
+                    "IN": [
+                        "click",
+                        "here",
+                        "subscribe",
+                        "win",
+                        "free",
+                        "prize"
+                    ]
+                }
+            }
+        ]
+    },
+    {
+        "label": "URL",
+        "pattern": [
+            {
+                "TEXT": {
+                    "REGEX": "https?://\\S+"
+                }
+            }
+        ]
+    },
+    {
+        "label": "URL",
+        "pattern": [
+            {
+                "TEXT": {
+                    "REGEX": "www\\.\\S+"
+                }
+            }
+        ]
+    },
+    {
+        "label": "UPPERCASE_WORD",
+        "pattern": [
+            {
+                "IS_UPPER": true
+            }
+        ]
+    },
+    {
+        "label": "SPAM_PHRASE",
+        "pattern": [
+            {
+                "LOWER": "click"
+            },
+            {
+                "LOWER": "here"
+            }
+        ]
+    },
+    {
+        "label": "SPAM_PHRASE",
+        "pattern": [
+            {
+                "LOWER": "buy"
+            },
+            {
+                "LOWER": "now"
+            }
+        ]
+    },
+    {
+        "label": "SPAM_PHRASE",
+        "pattern": [
+            {
+                "LOWER": "act"
+            },
+            {
+                "LOWER": "now"
+            }
+        ]
+    },
+    {
+        "label": "SPAM_PHRASE",
+        "pattern": [
+            {
+                "LOWER": "subscribe"
+            },
+            {
+                "LOWER": "to"
+            },
+            {
+                "LOWER": "our"
+            },
+            {
+                "LOWER": "channel"
+            }
+        ]
+    },
+    {
+        "label": "DISCOUNT_OFFER",
+        "pattern": [
+            {
+                "LOWER": "limited"
+            },
+            {
+                "LOWER": "time"
+            },
+            {
+                "LOWER": "offer"
+            }
+        ]
+    },
+    {
+        "label": "DISCOUNT_OFFER",
+        "pattern": [
+            {
+                "LOWER": "get"
+            },
+            {
+                "LOWER": "50"
+            },
+            {
+                "LOWER": "%"
+            },
+            {
+                "LOWER": "off"
+            }
+        ]
+    },
+    {
+        "label": "DISCOUNT_OFFER",
+        "pattern": [
+            {
+                "LOWER": "sale"
+            },
+            {
+                "LOWER": "ends"
+            },
+            {
+                "LOWER": "soon"
+            }
+        ]
+    },
+    {
+        "label": "FREE_GIFT",
+        "pattern": [
+            {
+                "LOWER": "free"
+            },
+            {
+                "LOWER": "gift"
+            }
+        ]
+    },
+    {
+        "label": "FREE_GIFT",
+        "pattern": [
+            {
+                "LOWER": "win"
+            },
+            {
+                "LOWER": "a"
+            },
+            {
+                "LOWER": "free"
+            },
+            {
+                "LOWER": "prize"
+            }
+        ]
+    },
+    {
+        "label": "FREE_GIFT",
+        "pattern": [
+            {
+                "LOWER": "enter"
+            },
+            {
+                "LOWER": "to"
+            },
+            {
+                "LOWER": "win"
+            }
+        ]
+    },
+    {
+        "label": "REFERRAL",
+        "pattern": [
+            {
+                "LOWER": "share"
+            },
+            {
+                "LOWER": "this"
+            },
+            {
+                "LOWER": "with"
+            },
+            {
+                "LOWER": "your"
+            },
+            {
+                "LOWER": "friends"
+            }
+        ]
+    },
+    {
+        "label": "REFERRAL",
+        "pattern": [
+            {
+                "LOWER": "refer"
+            },
+            {
+                "LOWER": "a"
+            },
+            {
+                "LOWER": "friend"
+            }
+        ]
+    },
+    {
+        "label": "REFERRAL",
+        "pattern": [
+            {
+                "LOWER": "invite"
+            },
+            {
+                "LOWER": "your"
+            },
+            {
+                "LOWER": "friends"
+            }
+        ]
+    }
+]
